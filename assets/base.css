@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+.list-table {
+  margin:30px;
+    border-collapse: collapse;
+}
+.list-table td {
+   
+    border: 1px solid rgb(112, 112, 112);
+    padding: 4px 8px;
+}   
+
+.list-table2 {
+    margin-top:30px;
+    margin-left:0px;
+    border-collapse: collapse;
+}
+.list-table2 td {
+   
+    border: 1px solid rgb(112, 112, 112);
+    padding: 4px 8px;
+}   
+
+
+
+
+
+body{
+  background-color: #dedede;
+	background-image:
+	 linear-gradient(#ecebeb 50%, transparent 50%, transparent);
+	background-size: 10px 10px;
+}
+  *{
+    margin: 0px ;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .menu{
+    width: 50%;
+    margin:40px 40px 40px 40px;
+  }
+  
+  .menu-card{
+    margin: 50px;
+    padding: 50px 50px;
+    background-color: white; 
+  }
+  .menu-card1{
+    margin: 50px;
+    padding: 50px 50px;
+    background-color: white; 
+  }
+
+  .menu-card2{
+    margin: 50px;
+    padding: 50px 50px;
+    background-color: white; 
+  }
+
+  .menu-card3{
+    margin: 50px;
+    padding: 50px 50px;
+    background-color: white; 
+  }
+  
+
+  .menu-card-inner{
+    text-align: center;
+  }
+  
+  .menu-image{
+    width:350px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+  }
+
+  .order{
+  margin:20px;
+  margin-top: 70px;
+  font-size:50px;
+  }
+  .foods{
+    margin:30px;
+    font-size:40px;
+  }
+
+  .errors{
+    margin:30px;
+    font-size:40px;
+    color:red;
+
+  }
+
+  header{
+    z-index: 10;
+    height: 64px;
+    position: fixed;
+    top: 0px;
+    background-color: #333;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+  .header-left{
+    float:left;
+  }
+
+ .header-right {
+    margin-right:40px;
+    font-size: 15px;
+    margin-top: 30px;
+    float: right;
+  }
+
+  .header-right a{ 
+      color: white; 
+  }
+  .top-header{
+    color:white;
+    font-size: 30px;
+  }
+  
+  .cheack{
+    font-size: 50px;
+    margin: 20px;
+  }
+
+  .food-order{
+    font-size: 40px;
+    margin: 30px;
+  }
+  
+
+  .Orderer{
+    font-size: 25px;
+    margin: 30px;
+  }
+
+  .user{
+    font-size: 1000px;
+    margin:30px;
+  }
+  
+ .Order-history{
+   font-size: 25px;
+   margin:30px;
+ }
+
+ .button {
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  margin: 20px;
+  padding       : 12px 12px;   /* 余白       */
+  background    : #000066;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #000066;    /* 枠の指定 */
+}
+.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #000066;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.mail-item-email{
+  position: relative;
+	width: 80%;
+	margin: 40px 3%;
+}
+.mail-item[type='text'] {
+  font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #aaaaaa;
+	border: none;
+	border-bottom: 2px solid #1b2538;
+	background: transparent;
+}
+.mail-items input[type='text']:focus{
+  border-bottom: 2px solid #da3c41;
+	outline: none;
+
+}
+
+
