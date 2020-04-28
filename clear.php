@@ -18,6 +18,11 @@ if(isset($_POST['delete'])) {//配列に値がなければ処理されない
 <head>
     <meta charset="utf-8">
     <title>買い物カゴ</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link  href="assets/css/style.css"  rel="stylesheet" media="all"/>
 </head>
 <body>
 
@@ -26,7 +31,7 @@ if(isset($_POST['delete'])) {//配列に値がなければ処理されない
     <?php else : ?>
         <h1>取り消す商品がありません</h1>
     <?php endif ?>
-<div><a href="cart.php">戻る</a></div>
+<div><a href="cart.php" class="cart">戻る</a></div>
 </body>
 </html>
 
