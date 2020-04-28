@@ -2,14 +2,13 @@
 session_start();
 if(!isset($_SESSION['cart']['food'])){
     session_destroy();
-    
     session_start();
     header('Location: index.php');
     exit;
 }
 $db_host ='127.0.0.1';          // サーバーのホスト名
 $db_name ='intern-form';       // データベース名
-$db_user ='food';      // データベースのユーザー名
+$db_user ='food';              // データベースのユーザー名
 $db_pass ='intern-0302';      // データベースのパスワード
 try {
     $dbh = new PDO('mysql:host=127.0.0.1;dbname=intern-form', $db_user,$db_pass);
@@ -89,7 +88,7 @@ EOF;
         </tr>
         <?php endforeach;?>
     <table class="list-table" style="margin-bottom: 20px;">
-      <h3 class="Orderer">注文者</h3> 
+      <h3 class="user">注文者</h3> 
     <tr>
         <td><div>名前:</td><td><?= htmlspecialchars( $_SESSION['cart']['name'] ?? '',ENT_QUOTES, 'UTF-8') ?></div></td>
         <td><div>メールアドレス:</td><td><?=htmlspecialchars( $_SESSION['cart']['email'] ?? '',ENT_QUOTES, 'UTF-8')?></div></td>
@@ -97,9 +96,9 @@ EOF;
     </tr>
       <form action="confirm.php" method="POST">
     </table>
-        <input type="submit" name="send" value="購入する" class="button">
+        <input type="submit" name="send" value="購入する" class="button" onClick="shop()">
     </form>
-    <div><a href="cart.php">カート画面へ戻る</a></div>
+    <div><a href="cart.php" class="cart">カート画面へ戻る</a></div>
 </body>
 </html>
 
