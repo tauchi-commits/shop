@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+.list-table {/*テーブルデザイン*/
+  margin:30px;
+    border-collapse: collapse;
+}
+.list-table td {
+   
+    border: 1px solid rgb(112, 112, 112);
+    padding: 4px 8px;
+}   
+
+.list-table2 {
+    margin-top:30px;
+    margin-left:0px;
+    border-collapse: collapse;
+}
+.list-table2 td {
+   
+    border: 1px solid rgb(112, 112, 112);
+    padding: 4px 8px;
+}   
+
+
+
+
+
+body{/*背景*/
+  background-color: #dfa177;
+	background-size:10px 10px;
+}
+  *{
+    margin: 0px ;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .menu{/*menu card*/
+    width: 50%;
+    margin:40px 40px 40px 40px;
+  }
+  
+  .menu-card{/*menu card 位置　色*/
+    margin: 50px;
+    padding: 30px 50px;
+    border-radius : 5%;
+    background-color: white; 
+  }
+  .menu-card1{
+    margin: 50px;
+    padding: 50px 50px;
+    border-radius : 5%;
+    background-color: white; 
+  }
+
+  .menu-card2{
+    margin: 50px;
+    padding: 50px 50px;
+    border-radius : 5%;
+    background-color: white; 
+  }
+
+  .menu-card3{
+    margin: 50px;
+    padding: 50px 50px;
+    border-radius : 5%;
+    background-color: white; 
+  }
+  
+
+  .menu-card-inner{
+    text-align: center;
+  }
+  
+  .menu-image{
+    width:350px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+  }
+  .menu-image{/*画像角丸　サイズ*/
+    border-radius : 5%;
+    width: 300px;
+    height: auto;
+  }
+
+  .order{
+  margin:20px;
+  margin-top: 70px;
+  font-size:50px;
+  }
+  .foods{
+    margin:30px;
+    font-size:40px;
+  }
+
+  .errors{/*エラーデザイン*/
+    margin:30px;
+    font-size:40px;
+    color:red;
+
+  }
+
+  header{/*header*/
+    z-index: 10;
+    height: 64px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+  .header-left{
+    float:left;
+  }
+
+ .header-right {
+    margin-right:40px;
+    font-size: 15px;
+    margin-top: 30px;
+    float: right;
+  }
+
+  .header-right a{ 
+      color: white; 
+  }
+  .top-header{
+    color:white;
+    font-size: 30px;
+    margin:10px;
+  }
+  
+  .cheack{/*確認画面*/
+    font-size: 50px;
+    margin: 20px;
+  }
+
+  .food-order{/*注文料理*/
+    font-size: 40px;
+    margin: 30px;
+  }
+  
+
+  .Orderer{/*注文画面*/
+    font-size: 25px;
+    margin: 30px;
+  }
+
+  .user{/*注文者*/
+    font-size: 40px;
+    margin:30px;
+  }
+  
+ .Order-history{/*注文履歴*/
+   font-size: 25px;
+   margin:30px;
+ }
+ .button {
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  margin: 20px;
+  padding       : 12px 12px;   /* 余白       */
+  background    : #dfd549;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #dfd549;    /* 枠の指定 */
+}
+.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #000066;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.cp_iptxt{/*入力デザイン*/
+ margin:30px;
+}
+.cp_iptxt input[type='text'] {
+font: 15px/24px sans-serif;
+box-sizing: border-box;
+width: 30%;
+padding: 0.3em;
+transition: 0.3s;
+letter-spacing: 1px;
+color: #aaaaaa;
+border: 1px solid #1b2538;
+border-radius: 4px;
+}
+
+
+.cart {/*リンクデザイン*/
+	display: inline-block;
+	padding: 0.3em;
+	transition: .3s;
+	transform: scale(1);
+	color: White;
+}
+.cart:hover {
+	transform: scale(1.05);
+}
+
+
+
+
+
