@@ -93,8 +93,8 @@ $i=null;//何かしらの値を宣言しないとエラーメッセージがで�
     <?php endif ?>
 
     <form action="clear.php" method="POST">
-    <h1>カートの中身</h1>
-    <table class="list-table2" style="margin-bottom: 20px;">
+    <h2 class="foods">カートの中身</h2>
+    <table class="list-table" style="margin-bottom: 20px;">
         <?php foreach ($food as $key => $value):$i++;?>
         <tr>
          <td><?= htmlspecialchars($value, ENT_QUOTES, 'UTF-8') ?></td>
@@ -104,22 +104,22 @@ $i=null;//何かしらの値を宣言しないとエラーメッセージがで�
         </table>
         <input type="submit" name="send" value="取り消し" class="button">
     </form>
-    <h1>注文者情報入力</h1>
+    <h2 class="foods">注文者情報入力</h2>
     
     <form action="cart.php" method="POST">
-        <div class="mail-item">
+        <div class="cp_iptxt">
             <label class=mail-items>
                 <input type="text"  placeholder="名前" name="name" value="<?= htmlspecialchars($post_values['cart']['name'] ?? '',ENT_QUOTES, 'UTF-8') ?>">
         </label>
         </div>
-        <div class="mail-item">
+        <div class="cp_iptxt">
             <label>
                 <input type="text"  placeholder="メールアドレス" name="email" value="<?= htmlspecialchars($post_values['cart']['email'] ?? '',ENT_QUOTES, 'UTF-8') ?>">
             </label>
         </div>
         <input type="submit" name="send" value="確認する" class="button">
     </form>
-    <div><a href="index.php">メニュー画面へ戻る</a></div>
+    <div><a href="index.php" class="cart">メニュー画面へ戻る</a></div>
                 
 </body>
 </html>
