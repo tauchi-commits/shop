@@ -51,7 +51,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC); // データベースに登録さ�
 <body　bgcolor="black" text="黒">
 <header>
 <div class="header-left">
-    <h4 class="top-header">中華料理店</h4>
+    <h1 class="top-header">中華料理店</h1>
 </div>
 <div class="header-right">
  <ul>
@@ -78,7 +78,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC); // データベースに登録さ�
     <div class="menu-card">
     <div class="menu-card-inner">
            <img class="menu-image" src="gazou/food.jpg" alt="焼きめし"> 
-        <br><label><input type="radio" name="food" value="焼き飯">焼き飯定食</label></br>
+        <br><label><input type="radio" name="food" value="焼き飯" >焼き飯定食</label></br>
      </div>
      </div>
 
@@ -100,7 +100,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC); // データベースに登録さ�
      <div class="menu-card3">
     <div class="menu-card-inner">
            <img class="menu-image" src="gazou/food4.jpg" alt="麻婆豆腐"> 
-        <br><label><input type="radio" name="food" value="麻婆豆腐">麻婆豆腐定食</label></br>
+       　 <br><label><input type="radio" name="food" value="麻婆豆腐">麻婆豆腐定食</label></br>
     </div>
     </div>
     </div>
@@ -115,7 +115,7 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC); // データベースに登録さ�
         <td>【名前】<?= htmlspecialchars($order['name'], ENT_QUOTES, 'UTF-8') ?></td>
         <td>【メールアドレス】<?= htmlspecialchars($order['email'], ENT_QUOTES, 'UTF-8') ?></td>
         <td>【購入日時】<?= htmlspecialchars($order['created_at'], ENT_QUOTES, 'UTF-8') ?></td>
-       <td><a href=delete.php?id=<?=$order["id"]?>>削除</a></td>
+       <td><a href=delete.php?id=<?=$order["id"]?> class="cart">削除</a></td>
     </tr>
     <?php endforeach;?>
     </table>
